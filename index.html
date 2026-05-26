@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TowTruck",
+  "name": "Reboque Trindade 24h",
+  "url": "https://SEU-DOMINIO.com.br",
+  "telephone": "+5522SEU-TELEFONE",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Campos dos Goytacazes",
+    "addressRegion": "RJ",
+    "addressCountry": "BR"
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Campos dos Goytacazes"},
+    {"@type": "City", "name": "Macaé"},
+    {"@type": "City", "name": "Rio das Ostras"},
+    {"@type": "City", "name": "São João da Barra"}
+  ]
+}
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Reboque Trindade 24h - Guincho e Socorro em Campos</title>
+    <meta name="description" content="Reboque Trindade: guincho 24h, frota própria, atendimento rápido em Campos e região. Transporte interestadual com seguro. Ligue já!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FBFBFB;
+            color: #1e2a3e;
+            line-height: 1.5;
+        }
+        :root {
+            --laranja: #E07312;
+            --laranja-escuro: #c45f0a;
+            --azul-medio: #4987A4;
+            --azul-escuro: #00003C;
+            --branco: #FBFBFB;
+            --preto: #000000;
+            --cinza-fundo: #edf2f7; /* Um cinza-azulado muito mais perceptível */
+        }
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 14px 28px;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--laranja), var(--laranja-escuro));
+            color: white;
+            box-shadow: 0 8px 20px rgba(224, 115, 18, 0.3);
+        }
+        .btn-primary:hover {
+            transform: scale(1.03);
+            background: linear-gradient(135deg, #f07a1c, var(--laranja-escuro));
+        }
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+        }
+        .btn-whatsapp i {
+            font-size: 1.4rem;
+        }
+        .btn-whatsapp:hover {
+            transform: scale(1.03);
+        }
+        /* Hero mais compacto (sem duplicação) */
+        .hero {
+    background: #dfe7ef;
+    border-bottom: 1px solid #e2e8f0;
+
+    position: relative;
+    overflow: hidden;
+}
+        .hero .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        .hero-content {
+    width: 45%;
+    position: relative;
+    z-index: 5;
+    text-align: left;
+    padding: 20px 0;
+}
+.hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+
+    clip-path: polygon(10% -2%, 100% 0, 100% 102%, 4% 102%);
+
+    overflow: hidden;
+}
+        .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+        .hero-image:hover img {
+            transform: scale(1.02);
+        }
+        .hero-badge {
+            background: rgba(224, 115, 18, 0.12);
+            border-left: 4px solid var(--laranja);
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--laranja);
+        }
+        .hero-content h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.4rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 0.3rem;
+            color: var(--azul-escuro);
+        }
+        .hero-content h1 span {
+            color: var(--laranja);
+            display: block;
+        }
+        .hero-description {
+            font-size: 0.9rem;
+            color: #2d3e50;
+            margin-bottom: 1.2rem;
+        }
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .trust-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+        .trust-badge {
+            background: var(--branco);
+            border: 1px solid #dce5ef;
+            padding: 6px 14px;
+            border-radius: 40px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: var(--azul-escuro);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .trust-badge i {
+            color: var(--laranja);
+        }
+        /* Ajuste mobile para hero */
+        @media (max-width: 900px) {
+            .hero .container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+            .hero-content {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 0;
+}
+            .hero-buttons, .trust-badges {
+                justify-content: center;
+            }
+            .hero-image {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+height: auto;
+
+    top: auto;
+    right: auto;
+
+    clip-path: none;
+
+    margin-top: 30px;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+}
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+        }
+        /* Seções */
+        section {
+            padding: 48px 0;
+        }
+        .section-light { 
+    background-color: var(--branco); 
+}
+.section-gray { 
+    background-color: #E2E8F0; /* Um cinza mais sólido e moderno */
+    border-top: 1px solid #CBD5E0;
+    border-bottom: 1px solid #CBD5E0;
+    margin: 20px 0; /* Cria um espaçamento entre as dobras, separando os blocos */
+}
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-family: 'Poppins', sans-serif;
+            color: var(--azul-escuro);
+        }
+        .section-title span {
+            color: var(--laranja);
+        }
+        /* Cards de serviço */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        .service-card {
+            background: var(--branco);
+            border-radius: 24px;
+            overflow: hidden;
+            transition: all 0.3s;
+            border: 1px solid #e2edf2;
+            border-bottom: 3px solid var(--laranja);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+        }
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1);
+            border-color: var(--laranja);
+        }
+        .service-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: #d9e6f2;
+        }
+        .service-content {
+            padding: 1.5rem;
+            flex: 1;
+        }
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.6rem;
+            color: var(--azul-escuro);
+        }
+        .service-card p {
+            color: #2c3e50;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        .service-card.highlight {
+            border: 2px solid var(--laranja);
+            background: #fffaf5;
+        }
+        .diferencial-badge {
+            background: var(--laranja);
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 4px 14px;
+            border-radius: 30px;
+            display: inline-block;
+            margin-bottom: 0.8rem;
+        }
+        /* Depoimentos */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .testimonial-card {
+            background: var(--branco);
+            border-radius: 24px;
+            padding: 1.8rem;
+            border: 1px solid #e0e8f0;
+            transition: 0.2s;
+        }
+        .testimonial-card:hover {
+            border-color: var(--laranja);
+        }
+        .testimonial-card i.fa-quote-left {
+            color: var(--laranja);
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            opacity: 0.7;
+        }
+        .client-name {
+            font-weight: 700;
+            color: var(--azul-escuro);
+        }
+        .client-stars {
+            color: var(--laranja);
+            margin-top: 0.5rem;
+        }
+        /* Diferenciais - com contraste sobre fundo branco */
+        .diferenciais-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        .diferencial-card {
+            background: #f9f9f9;        /* fundo levemente acinzentado para contraste */
+            border-radius: 20px;
+            padding: 1.8rem;
+            text-align: center;
+            border-bottom: 3px solid var(--laranja);
+            transition: 0.2s;
+            border: 1px solid #e2edf2;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        }
+        .diferencial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(224,115,18,0.15);
+        }
+        .diferencial-card .emoji {
+    font-size: 2.5rem;
+    background: rgba(224,115,18,0.1);  /* tom muito suave de laranja */
+    width: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+        .diferencial-card h3 {
+            color: var(--azul-escuro);
+            margin-bottom: 0.6rem;
+            font-weight: 800;
+        }
+        .diferencial-card p {
+            color: #2c3e50;
+            font-size: 0.85rem;
+        }
+        /* Transporte interestadual */
+        .interestadual-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            align-items: center;
+        }
+        .rotas {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        .rota-item {
+            background: var(--branco);
+            padding: 1rem;
+            border-radius: 16px;
+            border-left: 4px solid var(--laranja);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        /* CTA contrastante */
+        .cta-contraste {
+            background: linear-gradient(135deg, var(--azul-escuro) 0%, #1a1a5e 100%);
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 32px;
+            margin: 0 auto;
+            color: white;
+        }
+        .cta-contraste .btn {
+            background: white;
+            color: var(--azul-escuro);
+            margin-top: 1.2rem;
+        }
+        .cta-contraste .btn:hover {
+            background: var(--laranja);
+            color: white;
+        }
+        /* Áreas atendidas */
+        .areas-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .areas-card {
+            background: var(--branco);
+            border-radius: 24px;
+            padding: 1.8rem;
+            border: 1px solid #e0e8f0;
+            transition: 0.2s;
+        }
+        .areas-card:hover {
+            border-color: var(--laranja);
+        }
+        .areas-card h3 {
+            color: var(--azul-escuro);
+            border-bottom: 2px solid var(--cinza-fundo);
+            padding-bottom: 0.6rem;
+            margin-bottom: 1rem;
+        }
+        .split-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .area-list {
+            list-style: none;
+        }
+        .area-list li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        .area-list li i {
+            color: var(--laranja);
+            width: 16px;
+        }
+        .estados-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin: 0.5rem 0;
+        }
+        .estado-badge {
+            background: var(--cinza-fundo);
+            padding: 0.3rem 0.8rem;
+            border-radius: 40px;
+            font-weight: 600;
+            color: var(--azul-escuro);
+            font-size: 0.8rem;
+        }
+        .map-container {
+            width: 100%;
+            height: 280px;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 1rem;
+            border: 1px solid #e0e8f0;
+        }
+        /* FAQ */
+        .faq-container {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: var(--branco);
+            margin-bottom: 0.8rem;
+            border-radius: 20px;
+            border: 1px solid #e0e8f0;
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 1rem 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--azul-escuro);
+        }
+        .faq-question i {
+            color: var(--laranja);
+            transition: transform 0.2s;
+        }
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 1.5rem;
+            color: #3a546d;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 150px;
+            padding: 0 1.5rem 1.2rem 1.5rem;
+        }
+        /* Botão flutuante WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            right: 24px;
+            bottom: 30px;
+            background: #25D366;
+            color: white;
+            border-radius: 50px;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            z-index: 1000;
+            font-size: 1rem;
+        }
+        .whatsapp-float i {
+            font-size: 1.8rem;
+        }
+        /* Rodapé */
+        footer {
+            background: var(--azul-escuro);
+            color: #bcd0df;
+            padding: 2.5rem 5% 1.5rem;
+            border-top: 1px solid #2c3e50;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .footer-brand h3 {
+            color: var(--laranja);
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+        }
+        .footer-links a, .footer-links p {
+            display: block;
+            color: #bcd0df;
+            text-decoration: none;
+            margin-bottom: 0.6rem;
+            font-size: 0.85rem;
+        }
+        .footer-links a:hover {
+            color: white;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid #2c3e50;
+            font-size: 0.75rem;
+        }
+        /* Mobile bottom bar */
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: none;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            padding: 10px;
+            background: white;
+            z-index: 999;
+            border-top: 1px solid #dce5ef;
+        }
+        .bottom-btn {
+            padding: 12px;
+            text-align: center;
+            border-radius: 40px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        /* Botão de avaliação */
+        .botao-avaliacao {
+            display: block;
+            background: var(--laranja);
+            color: white;
+            padding: 15px;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 40px auto 0;
+            max-width: 300px;
+            transition: all 0.3s ease;
+        }
+        .botao-avaliacao:hover {
+            background: var(--laranja-escuro);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        /* Responsividade geral */
+        @media (max-width: 1000px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .areas-wrapper { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 700px) {
+            .services-grid { grid-template-columns: 1fr; }
+            .split-columns { grid-template-columns: 1fr; }
+            .section-title { font-size: 1.6rem; }
+            .cta-contraste { padding: 2rem 1rem; }
+        }
+        @media (max-width: 600px) {
+            .whatsapp-float { display: none; }
+            .bottom-bar { display: grid; }
+            body { padding-bottom: 70px; }
+        }
+      /* =============================================
+   TRANSPORTE INTERESTADUAL – LAYOUT MOBILE CORRETO
+   ============================================= */
+@media (max-width: 700px) {
+    /* 1. Força o grid principal em coluna única (texto+caixinhas em cima, cards abaixo) */
+    .interestadual-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+    }
+
+    /* 2. Texto e caixinhas ocupam largura total */
+    .interestadual-grid > div:first-child {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 3. Caixinhas lado a lado, centralizadas */
+    .interestadual-grid > div:first-child > div[style*="margin-top"] {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 12px !important;
+        flex-wrap: wrap !important;
+        margin-top: 1rem !important;
+    }
+
+    /* 4. Cards (rotas) organizados em 2 colunas */
+    .interestadual-grid .rotas {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem !important;
+        width: 100%;
+    }
+
+    /* 5. Ajuste interno dos cards */
+    .rota-item {
+        text-align: center;
+        padding: 0.8rem 0.5rem;
+    }
+}
+    </style>
+</head>
+<body>
+
+<!-- WhatsApp flutuante (desktop) -->
+<a href="https://wa.me/5522SEU-TELEFONE?text=Olá%20Reboque%20Trindade,%20preciso%20de%20um%20guincho%20urgente!" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i> <span>Atendimento 24h</span>
+</a>
+
+<!-- HERO com imagem à direita -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-badge">🚨 PAROU NA ESTRADA? LIGUE AGORA</div>
+            <h1>Reboque Trindade <span>Guincho 24h</span></h1>
+            <p class="hero-description">Socorro emergencial, transporte de veículos pesados e leves, com emissão de NF-e. Atendemos toda região de Campos, São João da Barra (Porto do Açu), Macaé, Norte Fluminense e interestadual.</p>
+            <div class="hero-buttons">
+                <a href="tel:5522SEU-TELEFONE" class="btn btn-primary"><i class="fas fa-phone-alt"></i> (22) SEU-TELEFONE</a>
+                <a href="https://wa.me/5522SEU-TELEFONE" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp 24h</a>
+            </div>
+            <div class="trust-badges">
+                <span class="trust-badge"><i class="fas fa-check-circle"></i> Nota Fiscal</span>
+                <span class="trust-badge"><i class="fas fa-credit-card"></i> PIX / Cartão</span>
+                <span class="trust-badge"><i class="fas fa-truck"></i> Frota Própria</span>
+                <span class="trust-badge"><i class="fas fa-clock"></i> 24h/7dias</span>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="reboque_ultra_pesados_campos_TR.jpeg" alt="Frota Reboque Trindade" onerror="this.src='https://placehold.co/600x400/4987A4/white?text=Reboque+Trindade'">
+        </div>
+    </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="section-light" id="servicos">
+    <div class="container">
+        <div class="section-title">Nossos <span>Serviços</span></div>
+        <div class="services-grid">
+            <div class="service-card">
+                <img class="service-img" src="reboque_de_onibus_campos_dos_goytacazes.jpeg" alt="Reboque Pesado" onerror="this.src='https://placehold.co/400x200/4987A4/white?text=Reboque+Pesado'">
+                <div class="service-content"><h3>Reboque Pesado e Leve</h3><p>Guinchos potentes para caminhões, máquinas agrícolas e carretas carregadas.</p></div>
+            </div>
+            <div class="service-card">
+                <img class="service-img" src="reboque_carros_campos_dos_goytacazes.jpeg" alt="Plataforma" onerror="this.src='https://placehold.co/400x200/4987A4/white?text=Plataforma+Veicular'">
+                <div class="service-content"><h3>Plataforma Veicular</h3><p>Transporte seguro de automóveis, picapes e vans, sem avarias.</p></div>
+            </div>
+            <div class="service-card highlight">
+                <img class="service-img" src="reboque-especial-24-horas-campos-dos-goytacazes.jpeg" alt="Frota Própria" onerror="this.src='https://placehold.co/400x200/4987A4/white?text=Frota+Pr%C3%B3pria'">
+                <div class="service-content">
+                    <span class="diferencial-badge">⭐ DIFERENCIAL TRINDADE</span>
+                    <h3>Frota Própria e Rápida</h3>
+                    <p>Nada terceirizado. Nossos caminhões e motoristas estão sempre prontos para atender você com agilidade e transparência.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img class="service-img" src="reboque-especial-24-horas-centro-campos.jpeg" alt="Motos" onerror="this.src='https://placehold.co/400x200/4987A4/white?text=Motos+e+Especiais'">
+                <div class="service-content"><h3>Motos e Especiais</h3><p>Cuidado especial com motocicletas e veículos de alto valor.</p></div>
+            </div>
+            <div class="service-card">
+                <img class="service-img" src="guincho_especial_campos_dos_goytacazes.jpeg" alt="Interestadual" onerror="this.src='https://placehold.co/400x200/4987A4/white?text=Interestadual'">
+                <div class="service-content"><h3>Transporte Interestadual</h3><p>RJ, SP, MG e ES com seguro e rastreamento.</p></div>
+            </div>
+            <div class="service-card">
+                <img class="service-img" src="reboque_maquinas_campos_dos_goytacazes.jpeg" alt="Emergência" onerror="this.src='https://placehold.co/400x200/4987A4/white?text=Socorro+24h'">
+                <div class="service-content"><h3>Socorro 24h</h3><p>Atendimento imediato em rodovias, feriados e madrugadas.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA após serviços -->
+<div class="container" style="margin-bottom: 30px;">
+    <div class="cta-contraste">
+        <h2>🚨 Guincho agora mesmo?</h2>
+        <p>Atendimento 24 horas - Chegamos em até 20 minutos</p>
+        <a href="tel:5522SEU-TELEFONE" class="btn"><i class="fas fa-phone-alt"></i> LIGUE AGORA</a>
+    </div>
+</div>
+
+<!-- DEPOIMENTOS -->
+<section class="section-gray">
+    <div class="container">
+        <div class="section-title">O que falam da <span>Trindade</span> ⭐</div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card"><i class="fas fa-quote-left"></i><p>"Atendimento excepcional! Meu caminhão quebrou na BR-101 e eles chegaram em 15 minutos. Profissionais sérios."</p><div class="client-name">— Marcos Andrade</div><div class="client-stars">★★★★★</div></div>
+            <div class="testimonial-card"><i class="fas fa-quote-left"></i><p>"Usei para transportar meu carro de Campos para o Rio. Nota fiscal, motorista educado e preço fechado. Recomendo."</p><div class="client-name">— Patrícia Rocha</div><div class="client-stars">★★★★★</div></div>
+            <div class="testimonial-card"><i class="fas fa-quote-left"></i><p>"Frota nova e bem equipada. Diferencial é não terceirizar, você sabe quem está vindo."</p><div class="client-name">— José Henrique</div><div class="client-stars">★★★★★</div></div>
+        </div>
+        <!-- Link de avaliação no Google – trocar o href pelo link real da empresa -->
+        <a href="https://g.page/r/SEU-LINK-DE-AVALIACAO/review" target="_blank" class="botao-avaliacao">
+            <i class="fas fa-star" style="color: #ffffff; margin-right: 8px;"></i> Avalie nosso atendimento no Google
+        </a>
+    </div>
+</section>
+
+<!-- DIFERENCIAIS (com contraste ajustado) -->
+<section class="section-light">
+    <div class="container">
+        <div class="section-title">Por que <span>Reboque Trindade?</span></div>
+        <div class="diferenciais-grid">
+            <div class="diferencial-card"><span class="emoji">⚡</span><h3>Rapidez</h3><p>Média de 20 minutos em Campos.</p></div>
+            <div class="diferencial-card"><span class="emoji">💰</span><h3>Preço Justo</h3><p>Orçamento sem surpresas.</p></div>
+            <div class="diferencial-card"><span class="emoji">🛠️</span><h3>Frota Própria</h3><p>Caminhões 0km, equipe treinada.</p></div>
+            <div class="diferencial-card"><span class="emoji">📋</span><h3>NF na Hora</h3><p>Para seguradoras e reembolso.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- TRANSPORTE INTERESTADUAL -->
+<section class="section-gray">
+    <div class="container">
+        <div class="interestadual-grid">
+            <div>
+                <h2 style="color: var(--azul-escuro);">Transporte <span style="color:var(--laranja)">Interestadual</span></h2>
+                <p>Levamos seu veículo com segurança para qualquer estado. Rotas fixas com seguro e rastreamento.</p>
+                <div style="margin-top:1rem"><span style="background:#eef2f7; padding:6px 12px; border-radius:20px;">✅ Seguro incluso</span> <span style="background:#eef2f7; padding:6px 12px; border-radius:20px;">✅ Rastreamento</span></div>
+            </div>
+            <div class="rotas">
+                <div class="rota-item"><strong>📍 Rio de Janeiro</strong><br>Capital e Baixada</div>
+                <div class="rota-item"><strong>📍 São Paulo</strong><br>Capital e Interior</div>
+                <div class="rota-item"><strong>📍 Minas Gerais</strong><br>BH e Zona da Mata</div>
+                <div class="rota-item"><strong>📍 Espírito Santo</strong><br>Vitória e Serra</div>
+            </div>
+        </div>
+         </div>
+        <!-- CTA final -->
+    <div class="container" style="margin-top: 40px;">
+        <div class="cta-contraste">
+            <h2>🚨 Precisa de um guincho agora mesmo?</h2>
+            <p>Atendimento 24 horas - Equipe a caminho em minutos</p>
+            <a href="tel:5522SEU-TELEFONE" class="btn">LIGUE AGORA</a>
+        </div>
+    </div>
+</section>
+
+<!-- ÁREAS ATENDIDAS -->
+<section class="section-light">
+    <div class="container">
+        <div class="section-title">📍 <span>Áreas que Atendemos</span></div>
+        <div class="areas-wrapper">
+            <div class="areas-card">
+                <h3><i class="fas fa-map-marked-alt"></i> Região de atuação</h3>
+                <div class="split-columns">
+                    <ul class="area-list">
+                        <li><i class="fas fa-map-marker-alt"></i> Campos dos Goytacazes</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Macaé</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rio das Ostras</li>
+                        <li><i class="fas fa-map-marker-alt"></i> São João da Barra</li>
+                        <li><i class="fas fa-map-marker-alt"></i> São Fidélis</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Quissamã</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Carapebus</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Conceição de Macabu</li>
+                    </ul>
+                    <div>
+                        <strong style="color: var(--azul-escuro);">Estados atendidos:</strong>
+                        <div class="estados-list">
+                            <span class="estado-badge"><i class="fas fa-flag"></i> Rio de Janeiro</span>
+                            <span class="estado-badge"><i class="fas fa-flag"></i> São Paulo</span>
+                            <span class="estado-badge"><i class="fas fa-flag"></i> Minas Gerais</span>
+                            <span class="estado-badge"><i class="fas fa-flag"></i> Espírito Santo</span>
+                        </div>
+                        <p style="margin-top: 1rem; font-size: 0.85rem;"><i class="fas fa-check-circle"></i> Transporte interestadual com seguro, rastreamento e NF-e.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="areas-card">
+                <h3><i class="fas fa-map"></i> Nossa Base</h3>
+                <div class="map-container">
+                    <!-- SUBSTITUA O src DO iframe PELO MAPA CORRETO DA TRINDADE -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.526886256167!2d-41.3037267!3d-21.798564400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdd56a08357963%3A0x381f97d42ff01fd4!2sTR%20Reboque%2024h%20-%20Base%20Campos%20-%20Transportamos%20seu%20ve%C3%ADculo%20e%20equipamentos%20para%20os%20Estados%20RJ%2C%20SP%2C%20MG%20e%20ES!5e0!3m2!1spt-BR!2sbr!4v1779807246526!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <p><i class="fas fa-location-dot"></i> Atendemos a partir de Campos dos Goytacazes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-gray">
+    <div class="container">
+        <div class="section-title">Perguntas <span>Frequentes</span></div>
+        <div class="faq-container">
+            <div class="faq-item"><div class="faq-question" onclick="toggleFAQ(this)"><span>⏱️ Qual o tempo médio de espera?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer">Nosso tempo médio de resposta em Campos é de 15 a 25 minutos. Atendimento 24h.</div></div>
+            <div class="faq-item"><div class="faq-question" onclick="toggleFAQ(this)"><span>🧾 Vocês emitem nota fiscal para seguradoras?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer">Sim! Nota fiscal eletrônica completa para reembolso.</div></div>
+            <div class="faq-item"><div class="faq-question" onclick="toggleFAQ(this)"><span>🏗️ Atendem veículos pesados?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer">Sim, frota especializada para caminhões, máquinas pesadas e agrícolas.</div></div>
+            <div class="faq-item"><div class="faq-question" onclick="toggleFAQ(this)"><span>🌍 Quais cidades?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer">Campos, Macaé, Rio das Ostras, São Fidélis, São João da Barra e toda região Norte Fluminense.</div></div>
+            <div class="faq-item"><div class="faq-question" onclick="toggleFAQ(this)"><span>🏢 Terceirizam o serviço?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer">Não! Frota 100% própria, motoristas treinados pela Reboque Trindade.</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- RODAPÉ -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <h3>REBOQUE TRINDADE 24h</h3>
+            <p>Guincho e socorro com frota própria, atendimento rápido e preço justo.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Contato</h4>
+            <a href="tel:5522SEU-TELEFONE"><i class="fas fa-phone"></i> (22) SEU-TELEFONE</a>
+            <a href="https://wa.me/5522SEU-TELEFONE"><i class="fab fa-whatsapp"></i> WhatsApp 24h</a>
+            <p><i class="fas fa-map-marker-alt"></i> Campos dos Goytacazes - RJ</p>
+        </div>
+        <div class="footer-links">
+            <h4>Horário</h4>
+            <p>🚛 24 horas por dia</p>
+            <p>📅 7 dias por semana</p>
+            <p>🔄 Incluindo feriados</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Reboque Trindade 24h. Todos os direitos reservados. | Frota Própria</p>
+    </div>
+</footer>
+
+<!-- BARRA INFERIOR MOBILE -->
+<div class="bottom-bar">
+    <a href="tel:5522SEU-TELEFONE" class="bottom-btn" style="background: var(--laranja); color:white;">📞 LIGAR</a>
+    <a href="https://wa.me/5522SEU-TELEFONE" class="bottom-btn" style="background: #25D366; color:white;">📱 WHATSAPP</a>
+</div>
+
+<script>
+    function toggleFAQ(element) {
+        const item = element.closest('.faq-item');
+        const active = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+        if (!active) item.classList.add('active');
+    }
+    document.querySelector('.faq-item')?.classList.add('active');
+</script>
+</body>
+</html>
